@@ -1,5 +1,5 @@
 import options from './menuList';
-
+import TemporaryDrawer from '../Drawer';
 function Header() {
   return (
     <header>
@@ -7,8 +7,12 @@ function Header() {
         Skip Navigation
       </a>
       <nav className="headerTop">
-        <a href="#" className="tempbox"></a>
-        <a href="#" className="tempbox"></a>
+        <a href="#" className="tempbox">
+          Amazon Logo
+        </a>
+        <a href="#" className="tempbox">
+          Deliver To
+        </a>
         {/* <div id="searchContainer"> */}
         <select id="searchDropdownBox">
           <option selected value="all">
@@ -29,6 +33,9 @@ function Header() {
         <a href="#" className="tempbox"></a>
       </nav>
       <navbar id="mainMenu">
+        <a href="#" className="optionBox">
+          <TemporaryDrawer />
+        </a>
         {options.map((item) => {
           return (
             <a href="#" className="optionBox">
