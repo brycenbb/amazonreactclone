@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+/* This is the end of boilerplate CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dkblue: #131921;
+  --yellow: #febd69;
+  --blue: #232f3e;
+  --bg: #eaeded;
+  --card: #ffffff;
+  --itemhover: #c7511f;
+  --textdark: #0f1111;
+  --textgrey: #555555;
+}
+
+.tempbox {
+  width: 4rem;
+  height: 3.5rem;
+  border: 1px solid yellow;
+}
+.headerTop {
+  display: flex;
+  padding: 0.2rem;
+  background-color: var(--dkblue);
+}
+#searchContainer {
+  flex: 4;
+}
+#searchBar {
+  flex: 4;
+  margin: 0.7rem 0;
+  margin-right: 0.5rem;
+  border: 0;
+  border-radius: 0.2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#searchDropdownBox {
+  border: 0;
+  margin: 0.7rem 0;
+  margin-left: 0.5rem;
+  border-right: 1px solid grey;
+  color: var(--textgrey);
+  border-radius: 0.2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#searchDropdownBox:hover {
+  color: var(--textdark);
+  background-color: #cac3c3;
+}
