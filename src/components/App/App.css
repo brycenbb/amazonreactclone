@@ -57,7 +57,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
+
 :root {
   --dkblue: #131921;
   --yellow: #febd69;
@@ -105,4 +107,30 @@
 #searchDropdownBox:hover {
   color: var(--textdark);
   background-color: #cac3c3;
+}
+#mainMenu {
+  display: flex;
+  flex-flow: wrap;
+  max-height: 2rem;
+  overflow: hidden;
+  background-color: var(--dkblue);
+}
+.optionBox {
+  padding: 0.2rem;
+}
+
+.optionBox:visited,
+.optionBox:focus {
+  color: white;
+}
+
+#skipBtn {
+  z-index: -1;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+}
+
+#skipBtn:focus {
+  z-index: 1000;
 }

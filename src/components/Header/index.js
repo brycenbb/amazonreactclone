@@ -1,9 +1,14 @@
+import options from './menuList';
+
 function Header() {
   return (
     <header>
+      <a href="#" id="skipBtn" className="optionBox">
+        Skip Navigation
+      </a>
       <nav className="headerTop">
-        <div className="tempbox"></div>
-        <div className="tempbox"></div>
+        <a href="#" className="tempbox"></a>
+        <a href="#" className="tempbox"></a>
         {/* <div id="searchContainer"> */}
         <select id="searchDropdownBox">
           <option selected value="all">
@@ -19,11 +24,19 @@ function Header() {
 
         <input type="text" id="searchBar"></input>
         {/* </div> */}
-        <div className="tempbox"></div>
-        <div className="tempbox"></div>
-        <div className="tempbox"></div>
+        <a href="#" className="tempbox"></a>
+        <a href="#" className="tempbox"></a>
+        <a href="#" className="tempbox"></a>
       </nav>
-      <navbar></navbar>
+      <navbar id="mainMenu">
+        {options.map((item) => {
+          return (
+            <a href="#" className="optionBox">
+              {item}
+            </a>
+          );
+        })}
+      </navbar>
     </header>
   );
 }
