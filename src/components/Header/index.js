@@ -7,8 +7,9 @@ function Header() {
         Skip Navigation
       </a>
       <nav className="headerTop">
-        <a href="#" className="tempbox">
-          Amazon Logo
+        <a href="#" className="tempbox logoStuff">
+          <span className="amazonLogoMain"></span>
+          <span className="nav-local">.co.uk</span>
         </a>
         <a href="#" className="tempbox">
           Deliver To
