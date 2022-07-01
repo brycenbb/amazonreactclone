@@ -7,31 +7,35 @@ function Header() {
         Skip Navigation
       </a>
       <nav className="headerTop">
-        <a href="#" className="tempbox logoStuff">
+        <a href="#" className="navLeft logoStuff">
           <span className="amazonLogoMain"></span>
           <span className="nav-local">.co.uk</span>
         </a>
-        <a href="#" className="tempbox">
+        <a href="#" className="navLeft">
           Deliver To
         </a>
-        {/* <div id="searchContainer"> */}
-        <select id="searchDropdownBox">
-          <option selected value="all">
-            All Departments
-          </option>
-          <option value="amazon-devices">Amazon Devices</option>
-          <option value="beauty">Beauty</option>
-          <option value="car">Car</option>
-          <option value="clothing">Clothing</option>
-          <option value="grocery">Grocery</option>
-          <option value="luggage">Luggage</option>
-        </select>
+        <div id="searchContainer">
+          <select id="searchDropdownBox">
+            <option selected value="all">
+              All Departments
+            </option>
+            <option value="amazon-devices">Amazon Devices</option>
+            <option value="beauty">Beauty</option>
+            <option value="car">Car</option>
+            <option value="clothing">Clothing</option>
+            <option value="grocery">Grocery</option>
+            <option value="luggage">Luggage</option>
+          </select>
 
-        <input type="text" id="searchBar"></input>
-        {/* </div> */}
-        <a href="#" className="tempbox"></a>
-        <a href="#" className="tempbox"></a>
-        <a href="#" className="tempbox"></a>
+          <input type="text" id="searchBar"></input>
+          <input type="submit" id="searchIcon" value="Go"></input>
+        </div>
+        <a href="#" id="currencyFlag">
+          <span id="flag"></span>
+        </a>
+        <a href="#" className="navRight"></a>
+        <a href="#" className="navRight"></a>
+        <a href="#" className="navRight"></a>
       </nav>
       <navbar id="mainMenu">
         <a href="#" className="optionBox">

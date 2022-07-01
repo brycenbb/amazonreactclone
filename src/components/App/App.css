@@ -72,10 +72,30 @@
   --textgrey: #555555;
 }
 
-.tempbox {
+.navLeft {
   width: 12rem;
   height: 3rem;
   border: 1px solid #131921;
+}
+
+.navRight {
+  /* will change width to fit the text later */
+  flex: 1;
+  border: 1px solid magenta;
+}
+#currencyFlag {
+  flex: 0.5;
+  border: 1px solid green;
+  /* background: no-repeat center/400% url('../../assests/amazonFlags.png');
+  background-repeat: no-repeat;
+
+  background-position: -20px -200px; */
+}
+#flag {
+  display: flex;
+  width: 24px;
+  height: 18px;
+  background: url('../../assests/amazonFlags.png');
 }
 .tempbox:hover {
   border: 1px solid white;
@@ -89,18 +109,36 @@
   gap: 0.2rem;
 }
 #searchContainer {
-  flex: 4;
+  flex: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #searchBar {
-  flex: 4;
+  width: 100%;
+  height: 70%;
   margin: 0.7rem 0;
-  margin-right: 0.5rem;
   border: 0;
-  border-radius: 0.2rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
+#searchIcon {
+  text-indent: -1000px;
+  width: 45px;
+  height: 70%;
+  border: 0;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  background-color: #febd69;
+  background-image: url('../../assests/amazonImages.png');
+  background-position: 0px -284.5px;
+}
+#searchIcon:hover {
+  filter: brightness(0.9);
+  text-shadow: none;
+}
+
 #searchDropdownBox {
+  width: fit-content;
+  height: 70%;
   border: 0;
   margin: 0.7rem 0;
   margin-left: 0.5rem;
