@@ -154,6 +154,7 @@
   background-color: #cac3c3;
 }
 #mainMenu {
+  padding-top: 0.2rem;
   display: flex;
   flex-flow: wrap;
   max-height: 2.5rem;

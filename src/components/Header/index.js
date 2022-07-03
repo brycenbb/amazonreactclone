@@ -15,10 +15,8 @@ function Header() {
           Deliver To
         </a>
         <div id="searchContainer">
-          <select id="searchDropdownBox">
-            <option selected value="all">
-              All Departments
-            </option>
+          <select id="searchDropdownBox" defaultValue={'all'}>
+            <option value="all">All Departments</option>
             <option value="amazon-devices">Amazon Devices</option>
             <option value="beauty">Beauty</option>
             <option value="car">Car</option>
@@ -37,18 +35,18 @@ function Header() {
         <a href="#" className="navRight"></a>
         <a href="#" className="navRight"></a>
       </nav>
-      <navbar id="mainMenu">
+      <nav id="mainMenu">
         <a href="#" className="optionBox">
           <TemporaryDrawer />
         </a>
-        {options.map((item) => {
+        {options.map((item, index) => {
           return (
-            <a href="#" className="optionBox">
+            <a key={index} href="#" className="optionBox">
               {item}
             </a>
           );
         })}
-      </navbar>
+      </nav>
     </header>
   );
 }
