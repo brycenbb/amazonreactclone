@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './index.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,10 +8,15 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard({ title, picture }) {
   return (
-    <Card sx={{ maxWidth: 345, margin: '0.5rem' }}>
+    <Card className="seeMore" sx={{ maxWidth: 345, margin: '0.5rem' }}>
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant="h3" component="div">
+          <Typography
+            className="cardTitle"
+            gutterBottom
+            variant="h3"
+            component="div"
+          >
             {title}
           </Typography>
           {/* <Typography variant="body2" color="text.secondary">

@@ -1,5 +1,6 @@
 import cardList from './cardsData';
 import ActionAreaCard from '../Card';
+import './index.css';
 function Recs() {
   return (
     <main id="recs">

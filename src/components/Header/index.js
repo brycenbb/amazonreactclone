@@ -1,5 +1,6 @@
 import options from './menuList';
 import TemporaryDrawer from '../Drawer';
+import './index.css';
 function Header() {
   return (
     <header>
