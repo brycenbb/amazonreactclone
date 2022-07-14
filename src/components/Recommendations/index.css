@@ -1,4 +1,6 @@
 #recs {
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--bg);
+  padding: 2rem;
 }
