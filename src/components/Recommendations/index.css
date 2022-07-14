@@ -1,6 +1,20 @@
 #recs {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: var(--bg);
-  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1480px;
+}
+
+.bannerImageContainer {
+  height: 600px;
+}
+
+.croppedImage {
+  height: 100%;
+}
+
+.cardSection {
+  display: flex;
+  flex-wrap: wrap;
 }
