@@ -1,10 +1,11 @@
 #imageContainer {
   height: 230px;
-  max-width: 100%;
+  max-width: 1480px;
   position: relative;
+  margin: 0 auto;
 }
 
 .bannerImgs {
-  max-width: 100%;
+  max-width: 1480px;
   position: absolute;
 }
