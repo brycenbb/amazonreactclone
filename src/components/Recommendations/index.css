@@ -4,17 +4,19 @@
   background-color: var(--bg);
   margin: 0 auto;
   max-width: 1480px;
+  z-index: 4;
 }
 
-.bannerImageContainer {
+/* .bannerImageContainer {
   height: 600px;
 }
 
 .croppedImage {
   height: 100%;
-}
+} */
 
 .cardSection {
   display: flex;
   flex-wrap: wrap;
+  z-index: 4;
 }

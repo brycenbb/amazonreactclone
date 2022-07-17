@@ -1,0 +1,10 @@
+#imageContainer {
+  height: 230px;
+  max-width: 100%;
+  position: relative;
+}
+
+.bannerImgs {
+  max-width: 100%;
+  position: absolute;
+}
