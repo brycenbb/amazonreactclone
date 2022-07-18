@@ -55,7 +55,14 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div style={{ maxWidth: '100px' }}>
+    <div
+      style={{
+        maxWidth: '100px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       {['All'].map((anchor) => (
         <React.Fragment key={'left'}>
           <Button
