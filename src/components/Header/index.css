@@ -24,8 +24,16 @@
   width: 24px;
   height: 18px;
   background: url('../../assests/amazonFlags.png');
+  background-position: -24px -130px;
 }
-
+#arrow {
+  background-image: url('../../assests/amazonImages.png');
+  background-position: 100px 0px;
+  width: 304px;
+  /* height: 304px; */
+  display: flex;
+  background-repeat: repeat-x;
+}
 .tempbox:hover {
   border: 1px solid white;
 }

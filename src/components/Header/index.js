@@ -36,6 +36,7 @@ function Header() {
         </div>
         <a href="#" id="currencyFlag">
           <span id="flag"></span>
+          <span id="arrow"></span>
         </a>
         <a href="#" className="navRight"></a>
         <a href="#" className="navRight"></a>
