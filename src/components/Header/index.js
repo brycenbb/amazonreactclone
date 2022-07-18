@@ -13,8 +13,12 @@ function Header() {
           <span className="amazonLogoMain"></span>
           <span className="nav-local">.co.uk</span>
         </a>
-        <a href="#" className="navLeft">
-          Deliver To
+        <a href="#" className="navLeft logoStuff">
+          <div id="locationImg"></div>
+          <div>
+            <div id="hello">Hello</div>
+            <div id="select">Select your address</div>
+          </div>
         </a>
         <div id="searchContainer">
           <select id="searchDropdownBox" defaultValue={'all'}>

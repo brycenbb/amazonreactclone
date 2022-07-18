@@ -1,7 +1,8 @@
 .navLeft {
-  width: 12rem;
+  width: 9.5rem;
   height: 3rem;
   border: 1px solid #131921;
+  margin-right: 0.3rem;
 }
 
 .navRight {
@@ -34,7 +35,7 @@
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   background-color: var(--dkblue);
-  gap: 0.2rem;
+  gap: 0.3rem;
 }
 #searchContainer {
   flex: 10;
@@ -139,7 +140,7 @@ a:focus {
 .amazonLogoMain {
   background-image: url('../../assests/amazonImages.png');
   background-position: 0px -40px;
-  width: 57%;
+  width: 72%;
   height: 100%;
   display: block;
 }
@@ -148,6 +149,8 @@ a:focus {
   display: block;
   width: fit-content;
   text-align: justify;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .logoStuff {
@@ -155,6 +158,12 @@ a:focus {
   align-items: center;
 }
 
+.logoStuff:hover {
+  border: 1px solid white;
+}
+.whiteOutline:hover {
+  border: 1px solid white;
+}
 #allIcon {
   background-image: url('../../assests/amazonImages.png');
   background-position: 178px -254px;
@@ -167,4 +176,20 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#hello {
+  font-size: 0.7rem;
+}
+
+#select {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#locationImg {
+  background-image: url('../../assests/amazonImages.png');
+  background-position: -71px -378px;
+  width: 18px;
+  height: 18px;
 }
