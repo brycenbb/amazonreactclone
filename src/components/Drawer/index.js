@@ -55,10 +55,20 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <div style={{ maxWidth: '100px' }}>
       {['All'].map((anchor) => (
         <React.Fragment key={'left'}>
-          <Button onClick={toggleDrawer('left', true)}>{anchor}</Button>
+          <Button
+            sx={{
+              padding: 0,
+              margin: 0,
+              fontSize: '0.9rem',
+              minWidth: '20px',
+            }}
+            onClick={toggleDrawer('left', true)}
+          >
+            {anchor}
+          </Button>
           <Drawer
             id="drawerContainer"
             sx={{ padding: 0, margin: 0 }}

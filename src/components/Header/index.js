@@ -1,6 +1,7 @@
 import options from './menuList';
 import TemporaryDrawer from '../Drawer';
 import './index.css';
+
 function Header() {
   return (
     <header>
@@ -17,7 +18,7 @@ function Header() {
         </a>
         <div id="searchContainer">
           <select id="searchDropdownBox" defaultValue={'all'}>
-            <option value="all">All Departments</option>
+            <option value="all"> All Departments</option>
             <option value="amazon-devices">Amazon Devices</option>
             <option value="beauty">Beauty</option>
             <option value="car">Car</option>
@@ -37,7 +38,8 @@ function Header() {
         <a href="#" className="navRight"></a>
       </nav>
       <nav id="mainMenu">
-        <a href="#" className="optionBox">
+        <a href="#" className="optionBox" id="allIconBox">
+          <div id="allIcon"></div>
           <TemporaryDrawer />
         </a>
         {options.map((item, index) => {
