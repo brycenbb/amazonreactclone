@@ -47,8 +47,18 @@ function Header() {
             </div>
           </div>
         </a>
-        <a href="#" className="navRight"></a>
-        <a href="#" className="navRight"></a>
+        <a href="#" className="navRight">
+          <div className="returnBox">
+            <div>Returns</div>
+            <div>&amp; Orders</div>
+          </div>
+        </a>
+        <a href="#" className="navRight">
+          <div className="basketBox">
+            <div id="basketCount">0</div>
+            <div>Basket</div>
+          </div>
+        </a>
       </nav>
       <nav id="mainMenu">
         <a href="#" className="optionBox" id="allIconBox">

@@ -7,7 +7,7 @@
 
 .navRight {
   /* will change width to fit the text later */
-  flex: 1;
+  /* flex: 1; */
   /* border: 1px solid magenta; */
 }
 
@@ -57,7 +57,7 @@
   gap: 0.3rem;
 }
 #searchContainer {
-  flex: 12;
+  flex: 9;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -213,7 +213,8 @@ a:focus {
   height: 18px;
 }
 
-.signInBox {
+.signInBox,
+.returnBox {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -221,7 +222,9 @@ a:focus {
   margin-left: 0.2rem;
   border: 1px solid #131921;
 }
-.signInBox:hover {
+.signInBox:hover,
+.returnBox:hover,
+.basketBox:hover {
   border: 1px solid white;
 }
 
@@ -233,4 +236,37 @@ a:focus {
   display: flex;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.returnBox > div:first-child {
+  font-size: 0.8rem;
+  width: fit-content;
+}
+.returnBox > div:nth-child(2) {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.basketBox {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding: 0.3rem;
+  margin-left: 0.2rem;
+  border: 1px solid #131921;
+  font-weight: bold;
+}
+
+.basketBox > div:nth-child(2) {
+  height: fit-content;
+}
+#basketCount {
+  text-align: center;
+  background-image: url('../../assests/amazonImages.png');
+  background-position: -6px -332px;
+  width: 50px;
+  height: 40px;
+  color: #f08804;
 }
