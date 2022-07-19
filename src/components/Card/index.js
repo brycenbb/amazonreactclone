@@ -8,7 +8,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard({ title, picture }) {
   return (
-    <Card className="seeMore" sx={{ maxWidth: 345, margin: '0.5rem' }}>
+    <Card className="seeMore" sx={{ maxWidth: 345, margin: '0.75rem' }}>
       <CardActionArea>
         <CardContent>
           <Typography
@@ -19,10 +19,7 @@ export default function ActionAreaCard({ title, picture }) {
           >
             {title}
           </Typography>
-          {/* <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography> */}
+
           <CardMedia component="img" height="140" image={picture} alt="" />
         </CardContent>
       </CardActionArea>

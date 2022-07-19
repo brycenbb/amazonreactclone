@@ -12,12 +12,22 @@
 }
 
 #currencyFlag {
-  flex: 0.5;
-  border: 1px solid green;
+  /* flex: 0.5; */
+  border: 1px solid transparent;
+  width: fit-content;
+  /* border: 1px solid green; */
+  display: flex;
+  padding: 0.5rem;
+  align-items: flex-end;
+  margin-left: 1rem;
   /* background: no-repeat center/400% url('../../assests/amazonFlags.png');
   background-repeat: no-repeat;
 
   background-position: -20px -200px; */
+}
+
+#currencyFlag:hover {
+  border: 1px solid white;
 }
 #flag {
   display: flex;
@@ -28,11 +38,12 @@
 }
 #arrow {
   background-image: url('../../assests/amazonImages.png');
-  background-position: 100px 0px;
-  width: 304px;
-  /* height: 304px; */
+  background-position: 170px -332px;
+  width: 18px;
+  height: 18px;
   display: flex;
   background-repeat: repeat-x;
+  transform: scale(0.8);
 }
 .tempbox:hover {
   border: 1px solid white;
