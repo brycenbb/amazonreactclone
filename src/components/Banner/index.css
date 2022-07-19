@@ -4,6 +4,50 @@
   position: relative;
   margin: 0 auto;
 }
+#imageContainer > a {
+  margin: 1px;
+  margin-top: 2px;
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  border-radius: 2px;
+  padding: 0 10px;
+}
+#imageContainer > a:focus {
+  border: 2px solid seagreen;
+  outline: 2px solid white;
+}
+#imageContainer > a > div {
+  font-size: 2rem;
+}
+#imageContainer > a:first-child {
+  left: 0;
+}
+#imageContainer > a:first-child > div {
+  background: url('../../assests/amazonArrow.png');
+  background-position: 0px 0px;
+  width: 50px;
+  height: 100px;
+  background-repeat: no-repeat;
+  transform: scale(0.5);
+}
+#imageContainer > a:nth-child(2) {
+  right: 0;
+}
+#imageContainer > a:nth-child(2) > div {
+  background: url('../../assests/amazonArrow.png');
+  background-position: -90px 0px;
+  width: 50px;
+  height: 100px;
+  background-repeat: no-repeat;
+  transform: scale(0.5);
+}
 
 .bannerImgs {
   max-width: 1480px;
