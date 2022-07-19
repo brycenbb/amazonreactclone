@@ -71,9 +71,12 @@ export default function TemporaryDrawer() {
               margin: 0,
               fontSize: '0.9rem',
               minWidth: '20px',
+              fontWeight: 'bold',
             }}
             onClick={toggleDrawer('left', true)}
           >
+            <div id="allIcon"></div>
+
             {anchor}
           </Button>
           <Drawer

@@ -62,7 +62,7 @@ function Header() {
       </nav>
       <nav id="mainMenu">
         <a href="#" className="optionBox" id="allIconBox">
-          <div id="allIcon"></div>
+          {/* <div id="allIcon"></div> */}
           <TemporaryDrawer />
         </a>
         {options.map((item, index) => {
