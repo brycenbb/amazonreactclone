@@ -38,7 +38,15 @@ function Header() {
           <span id="flag"></span>
           <span id="arrow"></span>
         </a>
-        <a href="#" className="navRight"></a>
+        <a href="#" className="navRight">
+          <div className="signInBox">
+            <div>Hello, Sign in</div>
+            <div>
+              Account &amp; Lists
+              <span id="arrow"></span>
+            </div>
+          </div>
+        </a>
         <a href="#" className="navRight"></a>
         <a href="#" className="navRight"></a>
       </nav>

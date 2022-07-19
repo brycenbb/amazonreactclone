@@ -8,7 +8,7 @@
 .navRight {
   /* will change width to fit the text later */
   flex: 1;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 }
 
 #currencyFlag {
@@ -50,14 +50,14 @@
 }
 .headerTop {
   display: flex;
-  padding: 0.2rem;
+  padding: 0.3rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   background-color: var(--dkblue);
   gap: 0.3rem;
 }
 #searchContainer {
-  flex: 10;
+  flex: 12;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -211,4 +211,26 @@ a:focus {
   background-position: -71px -378px;
   width: 18px;
   height: 18px;
+}
+
+.signInBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+  border: 1px solid #131921;
+}
+.signInBox:hover {
+  border: 1px solid white;
+}
+
+.signInBox > div:first-child {
+  font-size: 0.7rem;
+}
+
+.signInBox > div:nth-child(2) {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
