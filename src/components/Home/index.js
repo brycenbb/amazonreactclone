@@ -12,7 +12,7 @@ function Home() {
       <Header></Header>
       {/* <div id="greyBox"> */}
       {searchTerm !== '' ? (
-        <div>Hi</div>
+        <div>{searchTerm}</div>
       ) : (
         <>
           <Banner></Banner>
