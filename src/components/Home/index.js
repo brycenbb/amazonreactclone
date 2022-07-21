@@ -6,8 +6,10 @@ function Home() {
   return (
     <>
       <Header></Header>
+      {/* <div id="greyBox"> */}
       <Banner></Banner>
       <Recs></Recs>
+      {/* </div> */}
     </>
   );
 }

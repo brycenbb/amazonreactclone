@@ -85,6 +85,11 @@
   text-shadow: none;
 }
 
+/* #greyBox {
+  background-color: rgba(189, 195, 199, 1);
+  z-index: 3;
+  position: relative;
+} */
 #searchDropdownBox {
   width: fit-content;
   height: 70%;
