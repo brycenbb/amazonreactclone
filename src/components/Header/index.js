@@ -3,6 +3,11 @@ import TemporaryDrawer from '../Drawer';
 import './index.css';
 
 function Header() {
+  //make a context and put the search info into it. Then, read that in Home to determine whether to render
+  //banner and recs or to render the search screen instead ('' vs not '' )
+  function handleSubmission() {
+    console.log(document.getElementById('searchBar').value);
+  }
   return (
     <header>
       <a href="#" id="skipBtn" className="optionBox">
@@ -32,7 +37,12 @@ function Header() {
           </select>
 
           <input type="text" id="searchBar"></input>
-          <input type="submit" id="searchIcon" value="Go"></input>
+          <input
+            type="submit"
+            id="searchIcon"
+            value="Go"
+            onClick={handleSubmission}
+          ></input>
         </div>
         <a href="#" id="currencyFlag">
           <span id="flag"></span>
@@ -62,7 +72,6 @@ function Header() {
       </nav>
       <nav id="mainMenu">
         <a href="#" className="optionBox" id="allIconBox">
-          {/* <div id="allIcon"></div> */}
           <TemporaryDrawer />
         </a>
         {options.map((item, index) => {
