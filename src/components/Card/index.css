@@ -18,3 +18,13 @@
   max-width: 350px;
   flex: 1 1 auto;
 }
+
+.cardLink,
+.cardLink:visited {
+  color: #348e9d;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+  color: #f08804;
+}
