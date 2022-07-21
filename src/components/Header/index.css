@@ -67,6 +67,7 @@
   height: 70%;
   margin: 0.7rem 0;
   border: 0;
+  padding-left: 0.2rem;
 }
 #searchIcon {
   text-indent: -1000px;
