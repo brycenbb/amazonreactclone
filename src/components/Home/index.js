@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
 function Home() {
   const { searchTerm } = useContext(searchContext);
-
+  //advice from jordan: look into using useReducer so that the code is cleaner with context. Will mimic redux
   return (
     <>
       <Header></Header>
