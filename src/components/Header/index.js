@@ -12,6 +12,9 @@ function Header() {
     setSearchTerm(document.getElementById('searchBar').value);
   }
   const { setSearchTerm, searchTerm } = useContext(searchContext);
+  function reloadPage() {
+    window.location.reload();
+  }
   // console.log('hi', searchTerm);
   return (
     <header>
@@ -19,7 +22,12 @@ function Header() {
         Skip Navigation
       </a>
       <nav className="headerTop">
-        <a href="#" className="navLeft logoStuff">
+        <a
+          href="#navLogo"
+          className="navLeft logoStuff"
+          id="navLogo"
+          onClick={reloadPage}
+        >
           <span className="amazonLogoMain"></span>
           <span className="nav-local">.co.uk</span>
         </a>
