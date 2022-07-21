@@ -2,6 +2,7 @@
 import Header from '../Header';
 import Recs from '../Recommendations';
 import Banner from '../Banner';
+import SearchResults from '../SearchResults';
 import { useContext } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
       <Header></Header>
       {/* <div id="greyBox"> */}
       {searchTerm !== '' ? (
-        <div>{searchTerm}</div>
+        <SearchResults></SearchResults>
       ) : (
         <>
           <Banner></Banner>

@@ -12,7 +12,7 @@ function Header() {
     setSearchTerm(document.getElementById('searchBar').value);
   }
   const { setSearchTerm, searchTerm } = useContext(searchContext);
-  console.log('hi', searchTerm);
+  // console.log('hi', searchTerm);
   return (
     <header>
       <a href="#" id="skipBtn" className="optionBox">
