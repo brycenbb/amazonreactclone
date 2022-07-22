@@ -36,6 +36,7 @@ let products = [
       { product_id: 6, count: 2 },
     ],
     title: 'Bunch of Apples',
+    condition: 'new',
     categories: ['food', 'fruit', 'edible', 'perishable', 'red', 'sweet'],
     price: 1000.01,
     pictures: [
@@ -51,6 +52,8 @@ let products = [
     title: 'Exercise band',
     categories: ['exercise', 'workout', 'band', 'stretch'],
     price: 20,
+    condition: 'renewed',
+
     pictures: [
       'https://images.unsplash.com/photo-1515775538093-d2d95c5ee4f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
     ],
@@ -62,6 +65,8 @@ let products = [
     alsoBought: [{ product_id: 6, count: 2 }],
     title: 'iPhone 12',
     price: 1200,
+    condition: 'renewed',
+
     categories: ['tech', 'computer', 'phone', 'mobile', 'camera'],
     pictures: [
       'https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aXBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -76,6 +81,8 @@ let products = [
     product_id: 4,
     alsoBought: [{ product_id: 2, count: 6 }],
     title: 'Hiking boots',
+    condition: 'new',
+
     categories: ['exercise', 'workout', 'hiking', 'shoes', 'adventure'],
     price: 60,
     pictures: [
@@ -90,6 +97,8 @@ let products = [
     title: 'Candle',
     categories: ['smell', 'fire', 'gentle', 'relaxing', 'scent'],
     price: 2,
+    condition: 'new',
+
     pictures: [
       'https://images.unsplash.com/photo-1601922046210-41e129a3e64a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FuZGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
       'https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
@@ -101,6 +110,8 @@ let products = [
     product_id: 6,
     alsoBought: [{ product_id: 5, count: 10 }],
     title: 'Gaming desktop',
+    condition: 'used',
+
     categories: ['computer', 'gaming', 'technology', 'PC'],
     price: 2500.55,
     pictures: [
