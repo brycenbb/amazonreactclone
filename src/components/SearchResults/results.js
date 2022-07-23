@@ -67,7 +67,7 @@ let products = [
     price: 1200,
     condition: 'renewed',
 
-    categories: ['tech', 'computer', 'phone', 'mobile', 'camera'],
+    categories: ['tech', 'technology', 'computer', 'phone', 'mobile', 'camera'],
     pictures: [
       'https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aXBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
       'https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
@@ -112,7 +112,7 @@ let products = [
     title: 'Gaming desktop',
     condition: 'used',
 
-    categories: ['computer', 'gaming', 'technology', 'PC'],
+    categories: ['computer', 'gaming', 'technology', 'tech', 'PC'],
     price: 2500.55,
     pictures: [
       'https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80',
