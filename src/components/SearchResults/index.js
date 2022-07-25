@@ -8,7 +8,7 @@ function SearchResults() {
   const minSim = 0.6; //similarity threshold needed to accept the item
   const { searchTerm } = useContext(searchContext);
   const [filtered, setFiltered] = useState([]);
-
+  //Need to make it so that changing the searchTerm will reset filtered to empty
   // useEffect(() => {
   //   async function Fetch(products) {
   //     let val;
