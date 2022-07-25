@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
 import products from './results';
 import { v4 as uuidv4 } from 'uuid';
+import ProductCard from '../ProductCard';
 function SearchResults() {
   const minSim = 0.6; //similarity threshold needed to accept the item
   const { searchTerm } = useContext(searchContext);
@@ -85,7 +86,12 @@ function SearchResults() {
         {filtered.map((item) => {
           return (
             <div key={uuidv4()} className="SR">
-              {item.title}
+              <ProductCard
+                title={item.title}
+                price={item.price}
+                rating={item.rating}
+                pictures={item.pictures}
+              ></ProductCard>
             </div>
           );
         })}
