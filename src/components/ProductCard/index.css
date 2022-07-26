@@ -1,8 +1,16 @@
 .productCard {
-  width: 50px;
-  height: 200px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
 }
 
 .productCard > img {
   object-fit: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.productCard > div {
+  display: flex;
+  flex-direction: column;
 }

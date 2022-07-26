@@ -3,7 +3,11 @@ import TemporaryDrawer from '../Drawer';
 import './index.css';
 import { useContext } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
+import { cartContext } from '../../contexts/contexts.js';
+
 function Header() {
+  const { cart } = useContext(cartContext);
+
   //make a context and put the search info into it. Then, read that in Home to determine whether to render
   //banner and recs or to render the search screen instead ('' vs not '' )
   function handleSubmission() {
@@ -11,7 +15,7 @@ function Header() {
     // search.setSearchTerm;
     setSearchTerm(document.getElementById('searchBar').value);
   }
-  const { setSearchTerm, searchTerm } = useContext(searchContext);
+  const { setSearchTerm } = useContext(searchContext);
   function reloadPage() {
     window.location.reload();
   }
@@ -78,7 +82,7 @@ function Header() {
         </a>
         <a href="#" className="navRight">
           <div className="basketBox">
-            <div id="basketCount">0</div>
+            <div id="basketCount">{cart.length}</div>
             <div>Basket</div>
           </div>
         </a>

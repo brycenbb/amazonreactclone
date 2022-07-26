@@ -76,10 +76,14 @@ function SearchResults() {
         </div>
         <div className="set">
           <div className="category">Delivery</div>
-          <input type="checkbox" name="notPrime"></input>
-          <label for="notPrime">Tomorrow by 1PM</label>
-          <input type="checkbox" name="prime"></input>
-          <label for="prime">All Prime</label>
+          <div>
+            <input type="checkbox" name="notPrime"></input>
+            <label for="notPrime">Tomorrow by 1PM</label>
+          </div>
+          <div>
+            <input type="checkbox" name="prime"></input>
+            <label for="prime">All Prime</label>
+          </div>
         </div>
       </div>
       <div className="SR">

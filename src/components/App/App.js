@@ -14,12 +14,14 @@ function App() {
   }
   return (
     <searchContext.Provider value={{ searchTerm, setSearchTerm }}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-        </Routes>
-      </Router>
+      <cartContext.Provider value={{ cart, addtoCart }}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+          </Routes>
+        </Router>
+      </cartContext.Provider>
     </searchContext.Provider>
   );
 }
