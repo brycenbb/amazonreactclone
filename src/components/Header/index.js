@@ -4,7 +4,7 @@ import './index.css';
 import { useContext } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
 import { cartContext } from '../../contexts/contexts.js';
-
+import { Link } from 'react-router-dom';
 function Header() {
   const { cart } = useContext(cartContext);
 
@@ -19,6 +19,10 @@ function Header() {
   function reloadPage() {
     window.location.reload();
   }
+  function resetSearch() {
+    setSearchTerm('');
+    document.getElementById('searchBar').value = '';
+  }
   // console.log('hi', searchTerm);
   return (
     <header>
@@ -26,15 +30,23 @@ function Header() {
         Skip Navigation
       </a>
       <nav className="headerTop">
-        <a
+        {/* <a
           href="#navLogo"
           className="navLeft logoStuff"
           id="navLogo"
           onClick={reloadPage}
+        > */}
+        <Link
+          to="/"
+          href="#navLogo"
+          className="navLeft logoStuff"
+          id="navLogo"
+          onClick={resetSearch}
         >
           <span className="amazonLogoMain"></span>
           <span className="nav-local">.co.uk</span>
-        </a>
+          {/* </a> */}
+        </Link>
         <a href="#" className="navLeft logoStuff">
           <div id="locationImg"></div>
           <div>

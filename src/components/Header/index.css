@@ -4,9 +4,9 @@
   border: 1px solid #131921;
   margin-right: 0.3rem;
 }
-/* * {
+header > * {
   color: white;
-} */
+}
 .navRight {
   /* will change width to fit the text later */
   /* flex: 1; */

@@ -8,7 +8,7 @@ import { useState } from 'react';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cart, setCart] = useState([]);
-
+  //need to change to include count!
   function addtoCart(name, price) {
     setCart((cart) => [...cart, { name, price }]);
   }
@@ -18,7 +18,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/home" element={<Home />}></Route>
+            {/* <Route path="/home" element={<Home />}></Route> */}
           </Routes>
         </Router>
       </cartContext.Provider>

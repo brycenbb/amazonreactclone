@@ -78,11 +78,11 @@ function SearchResults() {
           <div className="category">Delivery</div>
           <div>
             <input type="checkbox" name="notPrime"></input>
-            <label for="notPrime">Tomorrow by 1PM</label>
+            <label htmlFor="notPrime">Tomorrow by 1PM</label>
           </div>
           <div>
             <input type="checkbox" name="prime"></input>
-            <label for="prime">All Prime</label>
+            <label htmlFor="prime">All Prime</label>
           </div>
         </div>
       </div>

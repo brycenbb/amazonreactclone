@@ -5,7 +5,7 @@
 }
 
 .productCard > img {
-  object-fit: contain;
+  object-fit: cover;
   width: 300px;
   height: 300px;
 }
