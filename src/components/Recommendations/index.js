@@ -1,6 +1,6 @@
 import cardList from './cardsData';
 import ActionAreaCard from '../Card';
-import Banner from '../Banner';
+// import Banner from '../Banner';
 import './index.css';
 
 function Recs() {

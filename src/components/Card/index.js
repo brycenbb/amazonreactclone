@@ -23,7 +23,7 @@ export default function ActionAreaCard({ title, picture }) {
           <CardMedia component="img" height="140" image={picture} alt="" />
         </CardContent>
       </CardActionArea>
-      <a className="cardLink" href="#">
+      <a className="cardLink" href="#recs">
         See More
       </a>
     </Card>

@@ -19,7 +19,7 @@ function Banner() {
     <div id="imageContainer">
       {' '}
       <a
-        href="#"
+        href="#imageContainer"
         onClick={() => {
           handleClick('backward');
         }}
@@ -27,14 +27,18 @@ function Banner() {
         <div></div>
       </a>
       <a
-        href="#"
+        href="#imageContainer"
         onClick={() => {
           handleClick('forward');
         }}
       >
         <div></div>
       </a>
-      <img className="bannerImgs" src={imageArr[currImage]}></img>
+      <img
+        className="bannerImgs"
+        src={imageArr[currImage]}
+        alt="fake advertisement"
+      ></img>
     </div>
   );
 }
