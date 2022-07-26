@@ -3,7 +3,7 @@ import { cartContext } from '../../contexts/contexts.js';
 import { useContext } from 'react';
 
 function ProductCard({ title, price, rating, pictures }) {
-  const { cart, addtoCart } = useContext(cartContext);
+  const { addtoCart } = useContext(cartContext);
   function handleClick() {
     addtoCart(title, price);
   }

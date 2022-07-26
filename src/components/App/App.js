@@ -1,7 +1,6 @@
 import './App.css';
 import '../../assests/global.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from '../Header';
 import Home from '../Home';
 import { searchContext, cartContext } from '../../contexts/contexts.js';
 import { useState } from 'react';

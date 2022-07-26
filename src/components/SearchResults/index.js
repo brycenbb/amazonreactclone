@@ -1,13 +1,14 @@
 import './index.css';
-import { useContext, useEffect, useState } from 'react';
-import { searchContext } from '../../contexts/contexts.js';
+// import { useContext, useEffect, useState } from 'react';
+// import { searchContext } from '../../contexts/contexts.js';
 import products from './results';
 import { v4 as uuidv4 } from 'uuid';
 import ProductCard from '../ProductCard';
 function SearchResults() {
-  const minSim = 0.6; //similarity threshold needed to accept the item
-  const { searchTerm } = useContext(searchContext);
-  const [filtered, setFiltered] = useState([]);
+  // const minSim = 0.6; //similarity threshold needed to accept the item
+  // const { searchTerm } = useContext(searchContext);
+  // const [filtered, setFiltered] = useState([]);
+
   //Need to make it so that changing the searchTerm will reset filtered to empty
   // useEffect(() => {
   //   async function Fetch(products) {

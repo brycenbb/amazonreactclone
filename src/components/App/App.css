@@ -23,7 +23,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+a:visited {
+  text-decoration: none;
+  color: initial;
+}
+a {
+  text-decoration: none;
+}
 .App-link {
   color: #61dafb;
 }

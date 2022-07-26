@@ -16,9 +16,7 @@ function Header() {
     setSearchTerm(document.getElementById('searchBar').value);
   }
   const { setSearchTerm } = useContext(searchContext);
-  function reloadPage() {
-    window.location.reload();
-  }
+
   function resetSearch() {
     setSearchTerm('');
     document.getElementById('searchBar').value = '';
@@ -26,7 +24,12 @@ function Header() {
   // console.log('hi', searchTerm);
   return (
     <header>
-      <a href="#" id="skipBtn" className="optionBox">
+      <a
+        href="#recs"
+        id="skipBtn"
+        className="optionBox"
+        alt="skip to main content here"
+      >
         Skip Navigation
       </a>
       <nav className="headerTop">
@@ -47,7 +50,7 @@ function Header() {
           <span className="nav-local">.co.uk</span>
           {/* </a> */}
         </Link>
-        <a href="#" className="navLeft logoStuff">
+        <a href="#recs" className="navLeft logoStuff">
           <div id="locationImg"></div>
           <div>
             <div id="hello">Hello</div>
@@ -73,11 +76,11 @@ function Header() {
             onClick={handleSubmission}
           ></input>
         </div>
-        <a href="#" id="currencyFlag">
+        <a href="#recs" id="currencyFlag">
           <span id="flag"></span>
           <span id="arrow"></span>
         </a>
-        <a href="#" className="navRight">
+        <a href="#recs" className="navRight">
           <div className="signInBox">
             <div>Hello, Sign in</div>
             <div>
@@ -86,13 +89,13 @@ function Header() {
             </div>
           </div>
         </a>
-        <a href="#" className="navRight">
+        <a href="#recs" className="navRight">
           <div className="returnBox">
             <div>Returns</div>
             <div>&amp; Orders</div>
           </div>
         </a>
-        <a href="#" className="navRight">
+        <a href="#recs" className="navRight">
           <div className="basketBox">
             <div id="basketCount">{cart.length}</div>
             <div>Basket</div>
@@ -100,12 +103,12 @@ function Header() {
         </a>
       </nav>
       <nav id="mainMenu">
-        <a href="#" className="optionBox" id="allIconBox">
+        <a href="#recs" className="optionBox" id="allIconBox">
           <TemporaryDrawer />
         </a>
         {options.map((item, index) => {
           return (
-            <a key={index} href="#" className="optionBox">
+            <a key={index} href="#recs" className="optionBox">
               {item}
             </a>
           );

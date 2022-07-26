@@ -137,6 +137,9 @@ input {
 .optionBox:focus {
   color: white;
 }
+a {
+  color: white;
+}
 a:visited,
 a:focus {
   color: white;
