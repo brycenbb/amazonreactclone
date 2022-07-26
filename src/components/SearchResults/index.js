@@ -66,7 +66,7 @@ function SearchResults() {
   // }, [searchTerm]);
 
   return (
-    <main>
+    <main className="main">
       <div id="filters">
         <div className="set">
           <div className="category">Condition</div>
@@ -83,7 +83,8 @@ function SearchResults() {
         </div>
       </div>
       <div className="SR">
-        {filtered.map((item) => {
+        {/* Currently products.map, should be filtered.map */}
+        {products.map((item) => {
           return (
             <div key={uuidv4()} className="SR">
               <ProductCard
@@ -95,7 +96,7 @@ function SearchResults() {
             </div>
           );
         })}
-      </div>{' '}
+      </div>
     </main>
   );
 }

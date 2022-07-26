@@ -1,3 +1,4 @@
+import './index.css';
 function ProductCard({ title, price, rating, pictures }) {
   return (
     <div className="productCard">

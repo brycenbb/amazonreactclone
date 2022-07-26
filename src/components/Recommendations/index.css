@@ -20,3 +20,7 @@
   flex-wrap: wrap;
   z-index: 4;
 }
+
+.main > * {
+  color: black;
+}
