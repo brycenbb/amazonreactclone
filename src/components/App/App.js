@@ -11,8 +11,26 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cart, setCart] = useState([]);
   //need to change to include count!
-  function addtoCart(name, price) {
-    setCart((cart) => [...cart, { name, price }]);
+  console.log('app refresh');
+
+  function addtoCart(item) {
+    if (cart.length === 0) {
+      setCart([{ ...item, count: 1 }]);
+      return;
+    }
+    for (let i = 0; i < cart.length; i++) {
+      console.log(item, cart[i].product_id, item.product_id);
+
+      if (cart[i].product_id === item.product_id) {
+        let temp = cart;
+        temp[i].count++;
+        console.log('cart', cart);
+        console.log(temp, cart, item, cart[i].product_id, item.product_id);
+        setCart(temp);
+        return;
+      }
+    }
+    setCart([...cart, { ...item, count: 1 }]);
   }
   return (
     <searchContext.Provider value={{ searchTerm, setSearchTerm }}>

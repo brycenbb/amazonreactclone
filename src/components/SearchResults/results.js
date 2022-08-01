@@ -98,7 +98,6 @@ let products = [
     categories: ['smell', 'fire', 'gentle', 'relaxing', 'scent'],
     price: 2,
     condition: 'new',
-
     pictures: [
       'https://images.unsplash.com/photo-1601922046210-41e129a3e64a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FuZGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
       'https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
