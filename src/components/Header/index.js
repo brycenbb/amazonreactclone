@@ -5,17 +5,30 @@ import { useContext } from 'react';
 import { searchContext } from '../../contexts/contexts.js';
 import { cartContext } from '../../contexts/contexts.js';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Header() {
   const { cart } = useContext(cartContext);
-
+  const { searchTerm } = useContext(searchContext);
+  const { setSearchTerm } = useContext(searchContext);
+  console.log('page reloaded, search value', searchTerm);
+  let history = useNavigate();
   //make a context and put the search info into it. Then, read that in Home to determine whether to render
   //banner and recs or to render the search screen instead ('' vs not '' )
-  function handleSubmission() {
+  function handleSubmission(e) {
     // console.log(document.getElementById('searchBar').value);
     // search.setSearchTerm;
+    e.preventDefault();
+    if (!document.getElementById('searchBar').value) {
+      console.log('nothing typed in search bar, aborting');
+      return false;
+    }
+    history('/search');
+    console.log(
+      'updating search term',
+      document.getElementById('searchBar').value
+    );
     setSearchTerm(document.getElementById('searchBar').value);
   }
-  const { setSearchTerm } = useContext(searchContext);
 
   function resetSearch() {
     setSearchTerm('');
@@ -48,7 +61,6 @@ function Header() {
         >
           <span className="amazonLogoMain"></span>
           <span className="nav-local">.co.uk</span>
-          {/* </a> */}
         </Link>
         <a href="#recs" className="navLeft logoStuff">
           <div id="locationImg"></div>
@@ -67,14 +79,15 @@ function Header() {
             <option value="grocery">Grocery</option>
             <option value="luggage">Luggage</option>
           </select>
-
-          <input type="text" id="searchBar"></input>
-          <input
-            type="submit"
-            id="searchIcon"
-            value="Go"
-            onClick={handleSubmission}
-          ></input>
+          <form onSubmit={handleSubmission}>
+            <input type="text" id="searchBar" defaultValue={searchTerm}></input>
+            <input
+              type="submit"
+              id="searchIcon"
+              value="Go"
+              onClick={handleSubmission}
+            ></input>
+          </form>
         </div>
         <a href="#recs" id="currencyFlag">
           <span id="flag"></span>
@@ -95,12 +108,12 @@ function Header() {
             <div>&amp; Orders</div>
           </div>
         </a>
-        <a href="#recs" className="navRight">
+        <Link to="/cart" className="navRight">
           <div className="basketBox">
             <div id="basketCount">{cart.length}</div>
             <div>Basket</div>
           </div>
-        </a>
+        </Link>
       </nav>
       <nav id="mainMenu">
         <a href="#recs" className="optionBox" id="allIconBox">

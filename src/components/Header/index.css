@@ -68,15 +68,15 @@ input {
 }
 #searchBar {
   width: 100%;
-  height: 70%;
-  margin: 0.7rem 0;
+  /* height: 70%; */
+  /* margin: 0.7rem 0; */
   border: 0;
   padding-left: 0.2rem;
 }
 #searchIcon {
   text-indent: -1000px;
   width: 45px;
-  height: 70%;
+  /* height: 70%; */
   border: 0;
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
@@ -284,4 +284,18 @@ a:focus {
   width: 50px;
   height: 40px;
   color: #f08804;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  min-width: 50%;
+}
+
+form > input {
+  height: 100%;
+  margin: 0;
 }
