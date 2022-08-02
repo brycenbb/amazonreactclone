@@ -36,6 +36,12 @@ function Header() {
     document.getElementById('searchBar').value = '';
   }
   // console.log('hi', searchTerm);
+
+  let quantity = 0;
+  for (let i = 0; i < cart.length; i++) {
+    quantity += cart[i].count;
+  }
+  console.log('quantity', quantity);
   return (
     <header>
       <a
@@ -111,7 +117,7 @@ function Header() {
         </a>
         <Link to="/cart" className="navRight">
           <div className="basketBox">
-            <div id="basketCount">{cart.length}</div>
+            <div id="basketCount">{quantity}</div>
             <div>Basket</div>
           </div>
         </Link>

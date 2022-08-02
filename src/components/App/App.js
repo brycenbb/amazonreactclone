@@ -26,7 +26,7 @@ function App() {
         temp[i].count++;
         console.log('cart', cart);
         console.log(temp, cart, item, cart[i].product_id, item.product_id);
-        setCart(temp);
+        setCart([...temp]);
         return;
       }
     }
