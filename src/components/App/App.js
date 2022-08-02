@@ -32,9 +32,25 @@ function App() {
     }
     setCart([...cart, { ...item, count: 1 }]);
   }
+  function updateQuantity(item) {
+    console.log('updating cart, reducing by 1: ', item);
+    let temp = cart;
+    for (let i = 0; i < temp.length; i++) {
+      if (temp[i].product_id === item.product_id) {
+        temp[i].count--;
+        if (temp[i].count === 0) {
+          console.log('new cart:', [...temp.slice(0, i), ...temp.slice(i + 1)]);
+          setCart([...temp.slice(0, i), ...temp.slice(i + 1)]);
+          return;
+        }
+        setCart([...temp]);
+        return;
+      }
+    }
+  }
   return (
     <searchContext.Provider value={{ searchTerm, setSearchTerm }}>
-      <cartContext.Provider value={{ cart, addtoCart }}>
+      <cartContext.Provider value={{ cart, addtoCart, updateQuantity }}>
         <Router>
           <Routes>
             <Route path="/" element={<Home />}></Route>
