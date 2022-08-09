@@ -170,8 +170,8 @@ a:focus {
 }
 
 .amazonLogoMain {
-  background-image: url('../../assests/amazonImages.png');
-  background-position: 0px -40px;
+  background-image: url('../../assests/guava.jpg');
+  /* background-position: 0px -40px; */
   width: 72%;
   height: 100%;
   display: block;
