@@ -7,10 +7,11 @@ import { cartContext } from '../../contexts/contexts.js';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 function Header() {
+  console.log('header refresh');
   const { cart } = useContext(cartContext);
   const { searchTerm } = useContext(searchContext);
   const { setSearchTerm } = useContext(searchContext);
-  console.log('page reloaded, search value', searchTerm);
+  // console.log('page reloaded, search value', searchTerm);
   let history = useNavigate();
   //make a context and put the search info into it. Then, read that in Home to determine whether to render
   //banner and recs or to render the search screen instead ('' vs not '' )
@@ -19,14 +20,14 @@ function Header() {
     // search.setSearchTerm;
     e.preventDefault();
     if (!document.getElementById('searchBar').value) {
-      console.log('nothing typed in search bar, aborting');
+      // console.log('nothing typed in search bar, aborting');
       return false;
     }
     history('/search');
-    console.log(
-      'updating search term',
-      document.getElementById('searchBar').value
-    );
+    // console.log(
+    //   'updating search term',
+    //   document.getElementById('searchBar').value
+    // );
     setSearchTerm(document.getElementById('searchBar').value);
   }
 
@@ -35,6 +36,12 @@ function Header() {
     document.getElementById('searchBar').value = '';
   }
   // console.log('hi', searchTerm);
+
+  let quantity = 0;
+  for (let i = 0; i < cart.length; i++) {
+    quantity += cart[i].count;
+  }
+  console.log('quantity', quantity);
   return (
     <header>
       <a
@@ -110,7 +117,7 @@ function Header() {
         </a>
         <Link to="/cart" className="navRight">
           <div className="basketBox">
-            <div id="basketCount">{cart.length}</div>
+            <div id="basketCount">{quantity}</div>
             <div>Basket</div>
           </div>
         </Link>

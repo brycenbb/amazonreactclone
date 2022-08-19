@@ -89,10 +89,12 @@ function SearchResults() {
       </div>
       <div className="SR">
         {/* Currently products.map, should be filtered.map */}
+        <h3>Results</h3>
         {products.map((item) => {
           return (
             <div key={uuidv4()} className="SR">
               <ProductCard
+                item={item}
                 title={item.title}
                 price={item.price}
                 rating={item.rating}

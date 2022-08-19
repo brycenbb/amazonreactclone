@@ -1,0 +1,22 @@
+.articleSubtotal {
+  background-color: #ffffff;
+  margin: 1rem;
+  padding: 1rem;
+}
+.articleSubtotal > div {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.articleSubtotal > div > b {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.checkoutButton {
+  background-color: var(--buttonYellow);
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding: 0.4rem 3rem;
+  border-radius: 0.4rem;
+  border: none;
+}
