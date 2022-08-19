@@ -1,6 +1,6 @@
 # My Amazon clone!
 
-I took up this project to really test my React and broader Javascript skills in being able to create a diverse range of funtionalities. This is being developed alongside my 4-week team project at School of Code and thus will be updated less frequentyly than my normal projects. I have decided to tackle this behemoth of a project in chunks:
+I took up this project to really test my React and broader Javascript and React skills in being able to create a diverse range of funtionalities. The project is hosted on Netlify [here](https://brycenreactamazonclone.netlify.app) . This is being developed alongside my 4-week team project at School of Code and thus will be updated less frequentyly than my normal projects. I have decided to tackle this behemoth of a project in chunks:
 
 
 ## Current Task
