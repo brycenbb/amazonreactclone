@@ -1,10 +1,39 @@
 .laterCard {
-  max-width: 200px;
+  max-width: 250px;
   max-height: 500px;
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
+  border: 1px solid lightgrey;
+  padding: 0.3rem 0.5rem;
+}
+.laterCard > h2 {
+  font-size: 1.3rem;
+}
+.laterCard > h3 {
+  font-size: 1.2rem;
+}
+.laterCard > button {
+  border: none;
+  background-color: inherit;
+  color: var(--textlink);
+}
+.laterCard > button:not(#moveButton) {
+  text-align: left;
+}
+.laterCard > button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#moveButton {
+  border: 1px solid lightgrey;
+  padding: 0.3rem 2.5rem;
+  color: black;
+  border-radius: 0.5rem;
 }
 
-.laterCard > img {
-  width: 200px;
+#moveButton:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgb(244, 244, 244);
 }
