@@ -72,7 +72,7 @@ function App() {
   }
   return (
     <laterContext.Provider
-      value={{ addToLater, deleteFromLater, removeFromLater }}
+      value={{ laterItems, addToLater, deleteFromLater, removeFromLater }}
     >
       <searchContext.Provider value={{ searchTerm, setSearchTerm }}>
         <cartContext.Provider value={{ cart, addtoCart, updateQuantity }}>

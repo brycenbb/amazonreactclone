@@ -7,6 +7,7 @@ function BasketCard({
   rating,
   pictures,
   count,
+  addToLater,
 }) {
   console.log('basketCard refresh');
   function handleClick() {
@@ -16,12 +17,16 @@ function BasketCard({
     console.log(e.target.value);
     updateQuantity(item, Number(e.target.value));
   }
+  function moveItem() {
+    addToLater(item);
+    updateQuantity(item, 0);
+  }
   return (
     <div className="productCard">
       <img src={pictures[0]} alt="product"></img>
       <div>
         <div>{title}</div>
-        <div>${price}</div>
+        <div>£{price}</div>
         <div>Rating out of 5: {rating}</div>
         <div id="optionContainer">
           <div>
@@ -54,7 +59,7 @@ function BasketCard({
           <button onClick={handleClick}>Delete</button>
           <hr className="vertical"></hr>
 
-          <button>Save for later</button>
+          <button onClick={moveItem}>Save for later</button>
         </div>
       </div>
     </div>

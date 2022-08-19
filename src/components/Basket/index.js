@@ -1,14 +1,17 @@
-import { cartContext } from '../../contexts/contexts.js';
+import { cartContext, laterContext } from '../../contexts/contexts.js';
 import { useContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Header from '../Header';
 import BasketCard from '../BasketCard/index.js';
+import LaterCard from '../LaterCard/index.js';
 import Total from '../Total/index.js';
 import './index.css';
 function Basket() {
   console.log('basket refresh');
 
   const { cart, updateQuantity } = useContext(cartContext);
+  const { laterItems, addToLater, deleteFromLater, removeFromLater } =
+    useContext(laterContext);
   console.log('cart', cart);
   let total = 0;
   for (let i = 0; i < cart.length; i++) {
@@ -40,6 +43,7 @@ function Basket() {
                     rating={item.rating}
                     pictures={item.pictures}
                     count={item.count}
+                    addToLater={addToLater}
                   ></BasketCard>
                   <hr></hr>
                 </>
@@ -51,6 +55,15 @@ function Basket() {
           </section>
           <section id="yourItems">
             <h3>Your Items</h3>
+            {laterItems.map((item) => {
+              return (
+                <LaterCard
+                  item={item}
+                  removeFromLater={removeFromLater}
+                  deleteFromLater={deleteFromLater}
+                ></LaterCard>
+              );
+            })}
           </section>
         </div>
         <div>

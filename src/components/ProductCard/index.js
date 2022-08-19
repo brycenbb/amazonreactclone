@@ -12,7 +12,7 @@ function ProductCard({ item, title, price, rating, pictures }) {
       <img src={pictures[0]} alt="product"></img>
       <div>
         <div>{title}</div>
-        <div>${price}</div>
+        <div>£{price}</div>
         <div>Rating out of 5: {rating}</div>
         <button onClick={handleClick}>Add to Cart</button>
       </div>

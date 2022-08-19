@@ -1,0 +1,10 @@
+.laterCard {
+  max-width: 200px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.laterCard > img {
+  width: 200px;
+}
