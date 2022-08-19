@@ -15,5 +15,6 @@
   --itemhover: #c7511f;
   --textdark: #0f1111;
   --textgrey: #555555;
+  --buttonYellow: #ffd814;
   background-color: var(--bg);
 }
