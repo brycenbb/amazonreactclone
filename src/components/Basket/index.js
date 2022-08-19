@@ -55,15 +55,17 @@ function Basket() {
           </section>
           <section id="yourItems">
             <h3>Your Items</h3>
-            {laterItems.map((item) => {
-              return (
-                <LaterCard
-                  item={item}
-                  removeFromLater={removeFromLater}
-                  deleteFromLater={deleteFromLater}
-                ></LaterCard>
-              );
-            })}
+            <div id="laterCardGrid">
+              {laterItems.map((item) => {
+                return (
+                  <LaterCard
+                    item={item}
+                    removeFromLater={removeFromLater}
+                    deleteFromLater={deleteFromLater}
+                  ></LaterCard>
+                );
+              })}
+            </div>
           </section>
         </div>
         <div>

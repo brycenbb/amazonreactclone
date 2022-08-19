@@ -45,3 +45,10 @@ h1 {
 #quantitySelect {
   background-color: lightgray;
 }
+
+#laterCardGrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
