@@ -41,3 +41,7 @@ h1 {
 #basketSubtotal {
   text-align: right;
 }
+
+#quantitySelect {
+  background-color: lightgray;
+}
