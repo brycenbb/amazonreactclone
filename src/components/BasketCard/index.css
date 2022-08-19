@@ -1,0 +1,28 @@
+#optionContainer {
+  display: flex;
+  gap: 2px;
+  font-size: 0.8rem;
+}
+#optionContainer > * {
+  font-size: 0.8rem;
+}
+#quantitySelect:hover {
+  cursor: pointer;
+
+  filter: brightness(0.9);
+}
+#optionContainer > button {
+  border: none;
+  background-color: inherit;
+  color: var(--textlink);
+}
+#optionContainer > button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.vertical {
+  width: 1px;
+  height: 100%;
+  color: lightgrey;
+  margin: 0 0.35rem;
+}
