@@ -1,0 +1,62 @@
+.checkoutMain {
+  background-color: white;
+  height: fit-content;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkoutNav {
+  display: flex;
+  width: 98%;
+  height: 70px;
+  border-bottom: 1px solid #dddddd;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(0, #f2f2f2 0, #fff 40%);
+}
+.checkoutNav > div > img:hover {
+  cursor: pointer;
+}
+.checkoutNav > img:last-child {
+  width: 30px;
+  height: 30px;
+}
+.checkoutNav > div > img:first-child {
+  width: 90px;
+  height: auto;
+}
+
+.checkoutNav > .checkoutCounter {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 62px;
+}
+
+.checkoutNav > div > div {
+  font-size: 1.8rem;
+  color: var(--textlink);
+}
+
+.checkoutNav > div > div:hover {
+  cursor: pointer;
+}
+
+.checkoutNav > div {
+  position: relative;
+}
+.checkoutCounter {
+  position: relative;
+}
+.mini-modal1,
+.mini-modal2 {
+  top: 66px;
+  position: absolute;
+  z-index: 2;
+  font-size: 0.5rem;
+  border: 1px solid pink;
+}

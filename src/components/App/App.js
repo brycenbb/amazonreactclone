@@ -11,6 +11,7 @@ import {
   laterContext,
 } from '../../contexts/contexts.js';
 import { useState } from 'react';
+import Checkout from '../Checkout';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cart, setCart] = useState([]);
@@ -89,7 +90,7 @@ function App() {
                   </>
                 }
               ></Route>
-              {/* <Route path="/home" element={<Home />}></Route> */}
+              <Route path="/checkout" element={<Checkout />}></Route>
             </Routes>
           </Router>
         </cartContext.Provider>

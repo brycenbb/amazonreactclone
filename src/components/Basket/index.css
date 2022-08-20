@@ -2,7 +2,7 @@
   display: flex;
 }
 #mainBasket > div:first-child {
-  flex: 5;
+  flex: 3.5;
 }
 #mainBasket > div:last-child {
   flex: 1;
@@ -28,7 +28,7 @@ hr {
 .line > div {
   text-align: right;
   width: 100%;
-  color: gray;
+  font-size: 0.85rem;
 }
 h1 {
   font-size: 1.5rem;
