@@ -57,6 +57,29 @@
   top: 66px;
   position: absolute;
   z-index: 2;
+  background-color: white;
   font-size: 0.5rem;
   border: 1px solid pink;
+  width: 402px;
+}
+.mini-modal1 > div,
+.mini-modal2 > div {
+  color: black;
+  font-size: 0.9rem;
+}
+.confirm {
+  background-color: var(--buttonYellow);
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--buttonYellow);
+  border-radius: 0.3rem;
+}
+.confirm:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.stay {
+  background-color: white;
+  border: 1px solid lightgrey;
 }

@@ -36,7 +36,16 @@ export default function Checkout() {
             className="mini-modal1"
             style={{ display: show ? 'block' : 'none' }}
           >
-            Are you sure you want to return to your Shopping Basket?
+            <div>Are you sure you want to return to your Shopping Basket?</div>
+            <button className="confirm stay">Stay in checkout</button>
+            <button
+              className="confirm"
+              onClick={() => {
+                navigate('/');
+              }}
+            >
+              Return to Basket
+            </button>
           </div>
         </div>
 
@@ -58,7 +67,16 @@ export default function Checkout() {
             className="mini-modal2"
             style={{ display: show2 ? 'block' : 'none' }}
           >
-            Are you sure you want to return to your Shopping Basket?
+            <div>Are you sure you want to return to your Shopping Basket?</div>
+            <button className="confirm stay">Stay in checkout</button>
+            <button
+              className="confirm"
+              onClick={() => {
+                navigate('/');
+              }}
+            >
+              Return to Basket
+            </button>
           </div>
         </div>
         <img src={lock} alt="privacy policy"></img>
