@@ -1,7 +1,6 @@
 import { cartContext } from '../../contexts/contexts.js';
 import { useContext } from 'react';
 import './index.css';
-import Checkout from '../Checkout/index.js';
 import { useNavigate } from 'react-router-dom';
 function Total({ price }) {
   const { cart } = useContext(cartContext);
