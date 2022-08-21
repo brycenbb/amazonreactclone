@@ -81,8 +81,22 @@ export default function Checkout() {
         </div>
         <img src={lock} alt="privacy policy"></img>
       </nav>
-      <section>
-        <div>Select delivery addresses</div>
+      <section id="checkoutDetails">
+        <div>
+          1<div>Delivey address</div>
+          <table>
+            <tr>
+              <td>Brycen Barron-Borden</td>
+            </tr>
+            <tr>
+              <td>REDACTED</td>
+            </tr>
+            <tr>
+              <td>Leicester, UK</td>
+            </tr>
+          </table>
+          <div>Change</div>
+        </div>
         <div>Payment method</div>
         <div>Items and delivery</div>
       </section>

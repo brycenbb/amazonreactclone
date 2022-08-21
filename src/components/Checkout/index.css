@@ -83,3 +83,16 @@
   background-color: white;
   border: 1px solid lightgrey;
 }
+#checkoutDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#checkoutDetails > div {
+  flex: 1;
+  display: flex;
+}
+
+#checkoutDetails > div > div {
+  margin-left: 1rem;
+}
