@@ -53,6 +53,10 @@ h3 {
 .card-title {
   font-size: 1.3rem;
 }
+.card-title:hover {
+  color: var(--amazonOrange);
+  cursor: pointer;
+}
 
 .card-price {
   font-size: 1.5rem;
