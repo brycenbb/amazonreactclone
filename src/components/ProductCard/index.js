@@ -3,10 +3,16 @@ import { cartContext } from '../../contexts/contexts.js';
 import { useContext } from 'react';
 import starF from '../../assests/star.svg';
 import starH from '../../assests/star-half.svg';
-function ProductCard({ item, title, price, rating, pictures }) {
+import { useNavigate } from 'react-router-dom';
+
+function ProductCard({ item, title, price, rating, pictures, id }) {
   const { addtoCart } = useContext(cartContext);
+  let history = useNavigate();
   function handleClick() {
     addtoCart(item);
+  }
+  function handleRoute(id) {
+    history(`/search/${id}`);
   }
   let priceArray = price.toLocaleString('en-US').split('.');
   console.log(priceArray);
@@ -30,7 +36,14 @@ function ProductCard({ item, title, price, rating, pictures }) {
     <div className="productCard">
       <img src={pictures[0]} alt="product"></img>
       <div>
-        <div className="card-title">{title}</div>
+        <div
+          className="card-title"
+          onClick={() => {
+            handleRoute(id);
+          }}
+        >
+          {title}
+        </div>
         <div className="rating-container">
           {starArray.map((item) => {
             return item;

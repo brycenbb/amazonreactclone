@@ -94,6 +94,7 @@ function SearchResults() {
           return (
             <div key={uuidv4()} className="SR">
               <ProductCard
+                id={item.product_id}
                 item={item}
                 title={item.title}
                 price={item.price}

@@ -12,6 +12,7 @@ import {
 } from '../../contexts/contexts.js';
 import { useState } from 'react';
 import Checkout from '../Checkout';
+import ProductPage from '../ProductPage';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [cart, setCart] = useState([]);
@@ -89,6 +90,10 @@ function App() {
                     <SearchResults></SearchResults>
                   </>
                 }
+              ></Route>
+              <Route
+                path="/search/:product_id"
+                element={<ProductPage></ProductPage>}
               ></Route>
               <Route path="/checkout" element={<Checkout />}></Route>
             </Routes>
