@@ -93,7 +93,12 @@ function App() {
               ></Route>
               <Route
                 path="/search/:product_id"
-                element={<ProductPage></ProductPage>}
+                element={
+                  <>
+                    <Header></Header>
+                    <ProductPage />
+                  </>
+                }
               ></Route>
               <Route path="/checkout" element={<Checkout />}></Route>
             </Routes>
