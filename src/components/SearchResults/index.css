@@ -1,3 +1,8 @@
 .SR {
   color: black;
+  width: 65%;
+}
+
+div.SR {
+  width: 100%;
 }

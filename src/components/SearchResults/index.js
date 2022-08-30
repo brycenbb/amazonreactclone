@@ -87,7 +87,7 @@ function SearchResults() {
           </div>
         </div>
       </div>
-      <div className="SR">
+      <section className="SR">
         {/* Currently products.map, should be filtered.map */}
         <h3>Results</h3>
         {products.map((item) => {
@@ -103,7 +103,7 @@ function SearchResults() {
             </div>
           );
         })}
-      </div>
+      </section>
     </main>
   );
 }

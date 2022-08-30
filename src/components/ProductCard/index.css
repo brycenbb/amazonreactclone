@@ -1,5 +1,5 @@
 .productCard {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   display: flex;
 }
@@ -14,6 +14,10 @@
 .productCard > div {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.productCard > div > div {
+  display: flex;
 }
 
 .category {
@@ -44,4 +48,30 @@ div > label {
 h3 {
   font-size: 1.5em;
   font-weight: normal;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-price-coins {
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+}
+.card-price-symbol {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.star {
+  width: 20px;
+}
+
+.fill {
+  fill: yellow;
 }
