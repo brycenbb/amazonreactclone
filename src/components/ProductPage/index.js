@@ -20,7 +20,7 @@ export default function ProductPage() {
       setCurrImage(product.pictures[index]);
       console.log(e.target);
       let prevImage = document.querySelector('.chosen-image');
-      prevImage.classList.remove('chosen-image');
+      prevImage ? prevImage.classList.remove('chosen-image') : <></>;
       e.target.classList.add('chosen-image');
     }
   }
@@ -79,6 +79,40 @@ export default function ProductPage() {
             {starArray.map((item) => {
               return item;
             })}
+          </div>
+          <div className="product-price-main">
+            <div>Price:</div>
+            <div>£{product.price}</div>
+          </div>
+        </div>
+        <div className="product-checkout-container">
+          <div>£{product.price}</div>
+          <div>In Stock</div>
+          <form className="product-form">
+            <label>
+              Qty:{'  '}
+              <select>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+                <option value={6}>6</option>
+                <option value={7}>7</option>
+                <option value={8}>8</option>
+                <option value={9}>9</option>
+                <option value={10}>10</option>
+              </select>{' '}
+            </label>
+            <button>Add to Basket</button>
+          </form>
+          <div className="product-information-fake">
+            <div>Dispatches from</div>
+            <div>REDACTED</div>
+          </div>
+          <div className="product-information-fake">
+            <div>Sold by</div>
+            <div>REDACTED</div>
           </div>
         </div>
       </section>
