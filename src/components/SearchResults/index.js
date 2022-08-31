@@ -89,7 +89,10 @@ function SearchResults() {
       </div>
       <section className="SR">
         {/* Currently products.map, should be filtered.map */}
-        <h3>Results</h3>
+        <h3>
+          Results: (Disclaimer: Due to development, semantic search filtering
+          API is currently disabled - showing all results instead)
+        </h3>
         <div className="search-results-container">
           {products.map((item) => {
             return (
