@@ -1,16 +1,11 @@
 import './index.css';
-import { cartContext } from '../../contexts/contexts.js';
-import { useContext } from 'react';
 import starF from '../../assests/star.svg';
 import starH from '../../assests/star-half.svg';
 import { useNavigate } from 'react-router-dom';
 
 function ProductCard({ item, title, price, rating, pictures, id }) {
-  const { addtoCart } = useContext(cartContext);
   let history = useNavigate();
-  function handleClick() {
-    addtoCart(item);
-  }
+
   function handleRoute(id) {
     history(`/search/${id}`);
   }
