@@ -11,7 +11,6 @@
 .product-main {
   margin: 0 auto;
   width: 70%;
-  border: 1px solid red;
 }
 
 .product-image-mini-container {
@@ -57,17 +56,15 @@
 
 .product-information-details-container {
   width: 300px;
-  border: 1px solid blue;
   margin-left: 6rem;
   margin-right: 0.5rem;
 }
-.rating-container {
+.breakLine {
   border-bottom: 1px solid lightgrey;
 }
 
 .product-price-main {
   display: flex;
-  border: 1px solid pink;
 }
 .product-price-main > div:first-child {
   color: var(--textgrey);
@@ -82,6 +79,7 @@
   margin: 0.5rem;
   border-radius: 0.3rem;
   width: 200px;
+  padding: 0.5rem;
 }
 .product-checkout-container > div:first-child {
   color: #b43210;
@@ -96,6 +94,22 @@ form > label {
   flex-direction: column;
   align-items: baseline;
   height: fit-content;
+  margin-bottom: 6rem;
+}
+
+.product-form > button {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  background-color: var(--buttonYellow);
+  border-radius: 1rem;
+  border: none;
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+}
+.product-form > button:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
 }
 .product-information-fake {
   display: flex;
@@ -108,4 +122,11 @@ form > label {
 }
 .product-information-fake > div:last-child {
   font-size: 0.8rem;
+}
+
+.divider {
+  width: 95%;
+  margin: 0 auto;
+  height: 2px;
+  border: 1px solid lightgrey;
 }

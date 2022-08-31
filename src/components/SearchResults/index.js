@@ -90,20 +90,22 @@ function SearchResults() {
       <section className="SR">
         {/* Currently products.map, should be filtered.map */}
         <h3>Results</h3>
-        {products.map((item) => {
-          return (
-            <div key={uuidv4()} className="SR">
-              <ProductCard
-                id={item.product_id}
-                item={item}
-                title={item.title}
-                price={item.price}
-                rating={item.rating}
-                pictures={item.pictures}
-              ></ProductCard>
-            </div>
-          );
-        })}
+        <div className="search-results-container">
+          {products.map((item) => {
+            return (
+              <div key={uuidv4()} className="SR">
+                <ProductCard
+                  id={item.product_id}
+                  item={item}
+                  title={item.title}
+                  price={item.price}
+                  rating={item.rating}
+                  pictures={item.pictures}
+                ></ProductCard>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </main>
   );

@@ -83,7 +83,7 @@ export default function ProductPage() {
         </div>
         <div className="product-information-details-container">
           <h3 className="product-title">{product.title}</h3>
-          <div className="rating-container">
+          <div className="rating-container breakLine">
             {starArray.map((item) => {
               return item;
             })}
@@ -95,7 +95,7 @@ export default function ProductPage() {
         </div>
         <div className="product-checkout-container">
           <div>£{product.price}</div>
-          <div>In Stock</div>
+          <div style={{ color: '#007600', fontWeight: '600' }}>In Stock</div>
           <form className="product-form" onSubmit={handleSubmit}>
             <label>
               Qty:{'  '}
@@ -124,6 +124,7 @@ export default function ProductPage() {
           </div>
         </div>
       </section>
+      <div className="divider"></div>
       <section>Product information</section>
     </main>
   );

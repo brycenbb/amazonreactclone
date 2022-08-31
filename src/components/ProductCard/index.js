@@ -54,7 +54,7 @@ function ProductCard({ item, title, price, rating, pictures, id }) {
           <div className="card-price">{priceArray[0]}</div>
           <div className="card-price-coins">{priceArray[1] ?? '00'}</div>
         </div>
-        <button onClick={handleClick}>Add to Cart</button>
+        {/* <button onClick={handleClick}>Add to Cart</button> */}
       </div>
     </div>
   );
