@@ -37,9 +37,9 @@ function App() {
       }
     }
   }
-  function addtoCart(item) {
+  function addtoCart(item, count) {
     if (cart.length === 0) {
-      setCart([{ ...item, count: 1 }]);
+      setCart([{ ...item, count: count }]);
       return;
     }
     for (let i = 0; i < cart.length; i++) {
@@ -47,17 +47,16 @@ function App() {
 
       if (cart[i].product_id === item.product_id) {
         let temp = cart;
-        temp[i].count++;
+        temp[i].count += count;
         console.log('cart', cart);
         console.log(temp, cart, item, cart[i].product_id, item.product_id);
         setCart([...temp]);
         return;
       }
     }
-    setCart([...cart, { ...item, count: 1 }]);
+    setCart([...cart, { ...item, count: count }]);
   }
   function updateQuantity(item, quantity) {
-    console.log('updating cart, reducing by 1: ', item);
     let temp = cart;
     for (let i = 0; i < temp.length; i++) {
       if (temp[i].product_id === item.product_id) {
@@ -67,7 +66,7 @@ function App() {
           setCart([...temp.slice(0, i), ...temp.slice(i + 1)]);
           return;
         }
-        setCart([...temp]);
+        setCart([...temp, {}]);
         return;
       }
     }

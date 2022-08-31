@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import products from '../SearchResults/results';
 import './index.css';
+import { cartContext } from '../../contexts/contexts.js';
+
 import starF from '../../assests/star.svg';
 import starH from '../../assests/star-half.svg';
 export default function ProductPage() {
   let params = useParams();
   let history = useNavigate();
+  const { addtoCart } = useContext(cartContext);
   function handleClick() {
     history('/search');
   }
@@ -23,6 +26,11 @@ export default function ProductPage() {
       prevImage ? prevImage.classList.remove('chosen-image') : <></>;
       e.target.classList.add('chosen-image');
     }
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(e.target.elements[0].value);
+    addtoCart(product, Number(e.target.elements[0].value));
   }
   let priceArray = product.price.toLocaleString('en-US').split('.');
   console.log(priceArray);
@@ -88,7 +96,7 @@ export default function ProductPage() {
         <div className="product-checkout-container">
           <div>£{product.price}</div>
           <div>In Stock</div>
-          <form className="product-form">
+          <form className="product-form" onSubmit={handleSubmit}>
             <label>
               Qty:{'  '}
               <select>
