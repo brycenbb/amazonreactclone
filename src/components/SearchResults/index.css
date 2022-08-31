@@ -1,3 +1,28 @@
 .SR {
   color: black;
+  width: 65%;
+  background-color: #fff;
+}
+section.SR {
+  height: 100%;
+}
+.search-results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+div.SR {
+  width: fit-content;
+}
+#filters,
+.main {
+  background-color: #fff;
+}
+.main {
+  height: 100%;
+}
+
+body,
+#root {
+  height: 100vh;
 }

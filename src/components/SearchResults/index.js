@@ -87,23 +87,29 @@ function SearchResults() {
           </div>
         </div>
       </div>
-      <div className="SR">
+      <section className="SR">
         {/* Currently products.map, should be filtered.map */}
-        <h3>Results</h3>
-        {products.map((item) => {
-          return (
-            <div key={uuidv4()} className="SR">
-              <ProductCard
-                item={item}
-                title={item.title}
-                price={item.price}
-                rating={item.rating}
-                pictures={item.pictures}
-              ></ProductCard>
-            </div>
-          );
-        })}
-      </div>
+        <h3>
+          Results: (Disclaimer: Due to development, semantic search filtering
+          API is currently disabled - showing all results instead)
+        </h3>
+        <div className="search-results-container">
+          {products.map((item) => {
+            return (
+              <div key={uuidv4()} className="SR">
+                <ProductCard
+                  id={item.product_id}
+                  item={item}
+                  title={item.title}
+                  price={item.price}
+                  rating={item.rating}
+                  pictures={item.pictures}
+                ></ProductCard>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 }

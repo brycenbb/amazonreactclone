@@ -12,10 +12,12 @@
   --blue: #232f3e;
   --bg: #eaeded;
   --card: #ffffff;
+  --cardborder: #f6f6f6;
   --itemhover: #c7511f;
   --textdark: #0f1111;
   --textlink: #007185;
   --textgrey: #555555;
   --buttonYellow: #ffd814;
+  --amazonOrange: #c65d0d;
   background-color: var(--bg);
 }
